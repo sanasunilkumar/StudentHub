@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <title>Document</title>
+</head>
+
+<body style="
+      background-image: url(https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdjU0NmJhdGNoMy1teW50LTM0LWJhZGdld2F0ZXJjb2xvcl8xLmpwZw.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    ">
+    <center>
+        <form action="{% url 'create' %}" method="POST">
+            {% csrf_token %}
+            <label for="name" style="background-color: black;">Enter the title of the todo :</label>
+            <input type="text" name="name" id="name" />
+            <br>
+            <label for="type" style="background-color: black;">Enter the type of work : </label>
+            <input type="type" name="type" id="type" />
+            <br>
+            <input type="submit" value="Add work" class="btn btn-success" />
+        </form>
+        {% comment %}
+        <form method="POST">
+            {{form.as_p}} {%csrf_token%}
+            <input type="submit" value="Add work" class="btn btn-success" />
+        </form>
+        {% endcomment %}
+    </center>
+</body>
+
+</html>

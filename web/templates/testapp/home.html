@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static "css/demo.css" %}">
+
+    <style>
+      .website-name {
+          font-size: 5rem; 
+          color: #FF5733; 
+      
+          text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); 
+      }
+      .student-writing {
+            font-family: Arial, sans-serif;
+            font-size: 24px;
+            color: #333;
+            text-align: left;
+            margin: 20px;
+            overflow: hidden;
+            white-space: nowrap;
+            border-right: 2px solid #333; 
+            animation: typing 10s steps(60) infinite;
+        }
+
+        @keyframes typing {
+            0% {
+                width: 0;
+            }
+            100% {
+                width: 100%;
+            }
+        }
+        
+  </style>
+  <title>Document</title>
+</head>
+<body style="background-image: url(https://t3.ftcdn.net/jpg/06/18/31/32/240_F_618313226_Wczjo6jJgYQkwZfSjtiTzqARdTuFeCix.jpg); background-repeat: no-repeat; background-size: cover;">
+  <div style="text-align: center;">
+    <nav class="navbar navbar-expand-lg navbar-light bg-green" style="background-color:burlywood;">
+        <a class="navbar-brand" href="https://sanasunilkumar.github.io/Protofolio/" target="_blank"><b>🅰🅳🅼🅸🅽</b></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="navbar-brand" href="/work"><b>🆃🅾-🅳🅾</b><span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="navbar-brand" href="/resources"><b>🆁🅴🆂🅾🆄🆁🅲🅴🆂</b><span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="navbar-brand"  href="http://127.0.0.1:14410/" target="_blank" ><b> 🅸🅽🆃🅴🆁🅽🆂🅷🅸🅿🆂</b></span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="navbar-brand"  href="/courses"><b> 🅸🅽🆂🆃🅸🆃🆄🅴🆂</b></span></a>
+            </li>
+          </ul>
+         <a href="/logout" class="btn btn-success">Logout</a>
+        </div>
+    </nav>
+</div>
+      {% block body_block %}
+      {% endblock %}
+      
+        <center>   
+          <h3 class="website-name">꧁𓊈🆂🆃🆄🅳🅴🅽🆃 🅷🆄🅱𓊉꧂</h3>                                                                                                                                                                        
+          <img src="https://play-lh.googleusercontent.com/jD7u0MhkpvnocgxdXgV1d34M9ktbVlxqBZtcjmf7xK7GNtUnRyMPuLP1OhOEZOxWuqQE" alt="Description of the image" style="border-radius: 50%; height: 300px">   
+        </center>
+        <div class="student-writing">
+          <b>"𝐖𝐞𝐥𝐜𝐨𝐦𝐞 𝐭𝐨 𝐨𝐮𝐫 𝐬𝐭𝐮𝐝𝐞𝐧𝐭 𝐡𝐮𝐛! 𝐖𝐞'𝐫𝐞 𝐞𝐱𝐜𝐢𝐭𝐞𝐝 𝐭𝐨 𝐡𝐚𝐯𝐞 𝐲𝐨𝐮 𝐨𝐧 𝐛𝐨𝐚𝐫𝐝.𝗟𝗲𝘁'𝘀 𝗹𝗲𝗮𝗿𝗻 𝗮𝗻𝗱 𝗴𝗿𝗼𝘄 𝘁𝗼𝗴𝗲𝘁𝗵𝗲𝗿 👩🏻‍💻📓✍🏻💡"</b>
+      </div>
+    </body>
+</html>

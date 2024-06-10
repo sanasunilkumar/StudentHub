@@ -1,0 +1,31 @@
+  
+.A {
+  position: absolute;
+  top: 100px;
+  left: 1%;
+  border-radius: 150%; 
+  width: 100px; 
+  height: 100px;
+}
+.E {
+    position: absolute;
+    top: 200px;
+    left: 3%;
+    width: 280px;
+    height: 250px;
+    border-radius: 100%; 
+    color: black;
+  }
+  .B{
+    position: absolute;
+    top: 200px;
+    left: 3%;
+    width: 280px;
+    height: 250px;
+    border-radius: 100%; 
+    color: black;
+}
+html, body { 
+  margin: 0;
+  overflow: hidden;
+}
